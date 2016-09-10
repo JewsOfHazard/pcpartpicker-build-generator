@@ -93,6 +93,22 @@ Power Supply:
 			80+ Gold = 4
 			80+ Bronze = 2
 			80+ = 1
+Cases:
+	Type:
+		&t=[NUMBER]
+			ATX Desktop = 1
+			ATX Full Tower = 4
+			ATX Mid Tower = 3
+			ATX Mini Tower = 2
+			MicroATX Desktop = 5
+			MicroATX Mid Tower = 7
+			MicroATX Mini Tower = 6
+			Mini ITX Desktop = 9
+			Mini ITX Tower = 10
+	Internal 3.5" Bays:
+		&J=[Low Number w/ No Extra 0s],[High Number w/ No Extra 0s]
+	Internal 2.5" Bays:
+		&K=[Low Number w/ No Extra 0s],[High Number w/ No Extra 0s]
 
 
 
