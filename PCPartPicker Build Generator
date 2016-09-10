@@ -68,6 +68,9 @@ Graphics Card Url Parameters:
 			2-way CrossFire = 1002
 			3-way CrossFire = 1003
 			4-way CrossFire = 1004
+	Core Clock:
+		&z=[MHZ Low],[MHZ High]
+
 
 
 
