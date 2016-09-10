@@ -2,9 +2,11 @@ Notes: PCPartPicker Estimation Bot
 
 ----------------------------------
 
+Note: All parameters begin with & unless they are the first called in the url after the / in which they are #. PCP using some angular stuff ? :)
+
 Global Url Parameters: 
 	Price:
-		#X=[PRICE LOW * 100],[PRICE HIGH * 100]
+		&X=[PRICE LOW * 100],[PRICE HIGH * 100]
 	Rating:
 		&R=[Something 1-5 or comma sepparated list of numbers 1-5]
 
@@ -18,7 +20,7 @@ Memory Url Parameters:
 
 Motherboard Url Parameters:
 	Socket / CPU:
-		#s=[NUMBER]
+		&s=[NUMBER]
 			AM3 = 3
 			AM3+ = 4
 			AM3/AM3+ = 22
@@ -71,6 +73,26 @@ Graphics Card Url Parameters:
 	Core Clock:
 		&z=[MHZ Low],[MHZ High]
 
+Power Supply:
+	Wattage:
+		&W=[Watts Low],[Watts High]
+	Modular:
+		&p=[NUMBER]
+			Fully Modular = 1
+			Partially Modular = 2
+			Not Modular = 0
+	Type (Form Factor):
+		&t=[NUMBER]
+			ATX = 2
+			Micro ATX = 6
+			Mini ITX = 8
+	Efficiency:
+		&e=[NUMBER]
+			80+ Titanium = 6
+			80+ Platinum = 5
+			80+ Gold = 4
+			80+ Bronze = 2
+			80+ = 1
 
 
 
