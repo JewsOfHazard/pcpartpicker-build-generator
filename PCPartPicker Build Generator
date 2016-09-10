@@ -1,0 +1,14 @@
+Notes: PCPartPicker Estimation Bot
+
+----------------------------------
+
+Global Url Parameters: 
+	Price:
+		#X=[PRICE LOW * 100],[PRICE HIGH * 100]
+Memory Url Parameters:
+	Speed:
+		&s=[number version (3 or 4)][5 Digit Speed with leading 0s aka 02133]
+	Size:
+		&Z=[GB Number * 1024][3 Digit Number of Modules (004) or (002) etc]
+
+Url for Memory: https://pcpartpicker.com/products/memory/
