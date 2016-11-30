@@ -1,0 +1,124 @@
+~Notes: PCPartPicker Estimation Bot
+
+----------------------------------
+
+Note: All parameters begin with & unless they are the first called in the url after the / in which they are #. PCP using some angular stuff ? :)
+
+Global Url Parameters: 
+	Price:
+		&X=[PRICE LOW * 100],[PRICE HIGH * 100]
+	Rating:
+		&R=[Something 1-5 or comma sepparated list of numbers 1-5]
+
+Memory Url Parameters:
+	Speed:
+		&s=[number version (3 or 4)][5 Digit Speed with leading 0s aka 02133]
+	Size:
+		&Z=[GB Number * 1024][3 Digit Number of Modules (004) or (002) etc]
+	Voltage:
+		&V=[Voltage Low * 1000],[Voltage High * 1000]
+
+Motherboard Url Parameters:
+	Socket / CPU:
+		&s=[NUMBER]
+			AM3 = 3
+			AM3+ = 4
+			AM3/AM3+ = 22~
+			AM3/AM2+ = 6
+			AM3/AM2+/AM2 = 7
+			LGA1150 = 24
+			LGA1151 = 30
+			LGA1155 = 14
+			LGA1156 = 15
+			LGA1366 = 16
+			LGA1366x2 = 20016
+			LGA2011 = 21
+			LGA2011x2 = 20021
+	Form Factor:
+		&f=[NUMBER]
+			ATX = 2
+			Micro ATX = 7
+			Mini ITX = 8
+	SLI Compatable:
+		&l=[NUMBER]
+			2-Way = 2
+			3-Way = 3
+			4-Way = 4
+			CrossFire = 1000
+	Ram Type (DDR3 etc):
+		&L=[Single Digit Number denoting Version (2, 3, or 4)]
+	Wireless Capability:
+		&e=[NUMBER]
+			802.11a/b/g/n/ac = 31
+			802.11a/b/g/n = 15
+			802.11b/g/n/ac = 30
+			802.11b/g/n = 14
+
+Graphics Card Url Parameters:
+	VRAM:
+		&r=[Number of Gigs * 1024]
+	Interface:
+		&i=[NUMBER]
+			PCI-E x8 = 38
+			PCI-E x16 = 39
+			PCI-E x1 = 35
+	SLI/CrossFire:
+		&s=[NUMBER]
+			2-way SLI = 2
+			3-way SLI = 3
+			4-way SLI = 4
+			2-way CrossFire = 1002
+			3-way CrossFire = 1003
+			4-way CrossFire = 1004
+	Core Clock:
+		&z=[MHZ Low],[MHZ High]
+
+Power Supply:
+	Wattage:
+		&W=[Watts Low],[Watts High]
+	Modular:
+		&p=[NUMBER]
+			Fully Modular = 1
+			Partially Modular = 2
+			Not Modular = 0
+	Type (Form Factor):
+		&t=[NUMBER]
+			ATX = 2
+			Micro ATX = 6
+			Mini ITX = 8
+	Efficiency:
+		&e=[NUMBER]
+			80+ Titanium = 6
+			80+ Platinum = 5
+			80+ Gold = 4
+			80+ Bronze = 2
+			80+ = 1
+Cases:
+	Type:
+		&t=[NUMBER]
+			ATX Desktop = 1
+			ATX Full Tower = 4
+			ATX Mid Tower = 3
+			ATX Mini Tower = 2
+			MicroATX Desktop = 5
+			MicroATX Mid Tower = 7
+			MicroATX Mini Tower = 6
+			Mini ITX Desktop = 9
+			Mini ITX Tower = 10
+	Internal 3.5" Bays:
+		&J=[Low Number w/ No Extra 0s],[High Number w/ No Extra 0s]
+	Internal 2.5" Bays:
+		&K=[Low Number w/ No Extra 0s],[High Number w/ No Extra 0s]
+
+=========TODO=========
+ADD CPUs and Paramters
+======================
+
+
+
+Url for Memory: https://pcpartpicker.com/products/memory/
+Url for Motherboards: https://pcpartpicker.com/products/motherboard/
+Url for Graphics Cards: https://pcpartpicker.com/products/video-card/
+Url for Power Supplies: https://pcpartpicker.com/products/power-supply/
+Url for Cases: https://pcpartpicker.com/products/case/
+Url for CPUs: https://pcpartpicker.com/products/cpu/
