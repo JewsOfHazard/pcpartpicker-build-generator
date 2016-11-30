@@ -1,8 +1,11 @@
 import urllib.request
 import json
 from enum import Enum
+import argparse
 
 call_outline = "https://pcpartpicker.com/products/{0}/fetch/{1}&mode=list&xslug=&search="
+
+
 
 def get_json_object(data):
 	jsonString = str(data[data.index(b'\"data\"')+7:data.index(b'\"html\"')-2])
@@ -37,4 +40,12 @@ def build_url_options(options):
 
 
 if __name__ == "__main__":
-	print(get_json_from_url(str(call_outline).format(WebcallType.graphicsCard.value, build_url_options([GlobalUrlParameters.price.value.format(10*100, 300*100), GlobalUrlParameters.rating.value.format(3)]))))
+
+	parser = argparse.ArgumentParser(description="Process price... Anything else?")
+	parser.add_argument('-p', '--price', nargs=1, dest="price", type=int,
+						help="This defines the price for your computer.",
+						default=1000)
+
+	args = parser.parse_args()
+	print(args)
+	#print(get_json_from_url(str(call_outline).format(WebcallType.graphicsCard.value, build_url_options([GlobalUrlParameters.price.value.format(10*100, 300*100), GlobalUrlParameters.rating.value.format(3)]))))
