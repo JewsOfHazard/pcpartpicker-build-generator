@@ -3,4 +3,4 @@ python:
   - "3.4"
   - "3.5"
 script: 
-- "./.travis/main.py"
+- "python3 main.py"
