@@ -8,14 +8,14 @@ call_outline = "https://pcpartpicker.com/products/{0}/fetch/{1}&mode=list&xslug=
 
 
 def get_json_object(data):
-	jsonString = str(data[data.index(b'\"data\"')+7:data.index(b'\"html\"')-2])
-	return json.dumps(jsonString)
+	json_string = str(data[data.index(b'\"data\"')+7:data.index(b'\"html\"')-2])
+	return json.dumps(json_string)
 
 class WebcallType(Enum):
 	memory = "memory"
 	motherboard = "motherboard"
-	graphicsCard = "video-card"
-	powerSupply = "power-supply"
+	graphics_card = "video-card"
+	power_supply = "power-supply"
 	case = "case"
 	cpu = "cpu"
 
@@ -29,14 +29,14 @@ def get_json_from_url(url):
 	return get_json_object(html)
 
 def build_url_options(options):
-	optionsList = "#"
+	options_list = "#"
 	for index,option in enumerate(options):
 		if index is not 0:
-			optionsList = optionsList + "&" + option
+			options_list = options_list + "&" + option
 		else:
-			optionsList = optionsList + option
+			options_list = options_list + option
 
-	return optionsList
+	return options_list
 
 
 if __name__ == "__main__":
@@ -48,4 +48,4 @@ if __name__ == "__main__":
 
 	args = parser.parse_args()
 	print(args)
-	#print(get_json_from_url(str(call_outline).format(WebcallType.graphicsCard.value, build_url_options([GlobalUrlParameters.price.value.format(10*100, 300*100), GlobalUrlParameters.rating.value.format(3)]))))
+	#print(get_json_from_url(str(call_outline).format(WebcallType.graphics_card.value, build_url_options([GlobalUrlParameters.price.value.format(10*100, 300*100), GlobalUrlParameters.rating.value.format(3)]))))

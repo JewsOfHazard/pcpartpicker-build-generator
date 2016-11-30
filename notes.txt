@@ -1,10 +1,10 @@
-~Notes: PCPartPicker Estimation Bot
+Notes: PCPartPicker Estimation Bot
 
 ----------------------------------
 
 Note: All parameters begin with & unless they are the first called in the url after the / in which they are #. PCP using some angular stuff ? :)
 
-Global Url Parameters: 
+Global Url Parameters:
 	Price:
 		&X=[PRICE LOW * 100],[PRICE HIGH * 100]
 	Rating:
@@ -23,7 +23,7 @@ Motherboard Url Parameters:
 		&s=[NUMBER]
 			AM3 = 3
 			AM3+ = 4
-			AM3/AM3+ = 22~
+			AM3/AM3+ = 22
 			AM3/AM2+ = 6
 			AM3/AM2+/AM2 = 7
 			LGA1150 = 24
@@ -110,10 +110,43 @@ Cases:
 	Internal 2.5" Bays:
 		&K=[Low Number w/ No Extra 0s],[High Number w/ No Extra 0s]
 
-=========TODO=========
-ADD CPUs and Paramters
-======================
-
+CPU:
+	Series:
+		&s=[NUMBER]
+			Intel Core i3 = 11
+			Intel Core i5 = 12
+			Intel Core i7 = 13
+			AMD FX = 23
+			AMD A10 = 25
+			AMD A8 = 21
+			AMD A6 = 20
+			AMD A4 = 22
+	Speed:
+		&Z=[Low in MHz],[High in MHz]
+	Cores:
+		&C=[Core Low],[Core High]
+	TDP:
+		&T=[Watts Low],[Watts High]
+	Socket:
+		&k=[NUMBER]
+			AM1 = 27
+			AM3 = 3
+			AM3+ = 4
+			AM3/AM2+ = 6
+			FM1 = 20
+			FM2 = 23
+			FM2+ = 26
+			LGA1150 = 24
+			LGA1151 = 30
+			LGA1155 = 14
+			LGA2011 = 21
+			LGA2011-3 = 28
+			LGA1156 = 15
+			LGA1366 = 16
+	Hyperthreaded:
+		&h=[NUMBER]
+			Yes = 1
+			No = 0
 
 
 Url for Memory: https://pcpartpicker.com/products/memory/
